@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import { NavBar } from './NavBar';
 import { Home } from './Pages/Home';
 import { AboutMe } from './Pages/AboutMe'; 
 import './App.css';
@@ -7,9 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <nav>
-          <Link to='/aboutme'></Link>
-        </nav>
+        <NavBar />
       </header>
       <Routes>
         <Route path='/' element={<Home />} />

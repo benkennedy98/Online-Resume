@@ -1,0 +1,7 @@
+.link {
+    font-family: 'Times New Roman', Times, serif;
+    font-size:50px;
+    text-decoration: unset;
+    color: var(--blue);
+    padding-right: 50px;
+}
