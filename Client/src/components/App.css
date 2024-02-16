@@ -4,7 +4,13 @@
     --green: #5CDB95;
     --light-green: #8EE4AF;
     --white: #EDF5E1;
-  }
+}
+
+@font-face {
+    font-family: "Memory";
+    src: local("Memory"),
+     url("../fonts/Memory.ttf") format("truetype");
+}
 
 .App {
     background-color: var(--green);
