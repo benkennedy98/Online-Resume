@@ -1,7 +1,30 @@
-.link {
-    font-family: 'Times New Roman', Times, serif;
-    font-size:50px;
-    text-decoration: unset;
-    color: var(--blue);
-    padding-right: 50px;
+.nav-bar {
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    .links-container {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        .link {
+            font-family: 'Memory', 'Times New Roman';
+            font-size: 28px;
+            text-decoration: unset;
+            color: var(--blue);
+            line-height: 40px;
+        }
+        .link:last-child {
+            margin-right: 0px;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .links-container {
+        flex-direction: column;
+    }
 }

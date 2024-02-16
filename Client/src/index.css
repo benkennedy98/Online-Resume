@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Memory";
+  src: local("Memory"),
+   url("./fonts/Memory.ttf") format("truetype");
+ }

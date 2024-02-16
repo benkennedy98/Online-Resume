@@ -10,7 +10,15 @@
     background-color: var(--green);
     height: 100vh;
     width: 100vw;
+    .page-container {
+        width: 100%;
+        height: 100%;
+    }
     .title {
+        height: 100px;
+        text-align: center;
         font-size: 50px;
+        font-family: 'Memory', 'Times New Roman';
+        color: var(--white);
     }
 }
