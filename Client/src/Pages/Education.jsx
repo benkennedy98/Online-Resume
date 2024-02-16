@@ -2,6 +2,10 @@ import './Education.css';
 
 export const Education = () => {
     return(
-        <div className='title'>Education</div>
+        <div className='page-container'>
+            <div className='title-container'>
+                <div className='title'>Education</div>
+            </div>
+        </div>
     )
 }
