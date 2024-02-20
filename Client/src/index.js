@@ -8,6 +8,7 @@ import history from "./history.js";
 import config from "./auth_config.json";
 
 import './fonts/Memory.ttf';
+import './global.css'
 
 const onRedirectCallback = (appState) => {
   history.push(

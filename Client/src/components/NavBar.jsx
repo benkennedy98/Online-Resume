@@ -8,7 +8,7 @@ export const NavBar = () => {
         <div className='nav-bar'>
             {!isAuthenticated && (
                 <div className='auth-button'>
-                    <button onClick={() => loginWithRedirect({})}>Login</button>
+                    <button className='log' onClick={() => loginWithRedirect({})}>Login</button>
                 </div>
             )}
             {isAuthenticated && (
@@ -18,10 +18,11 @@ export const NavBar = () => {
                         <Link className='link' to='/aboutme'>About Me</Link>
                         <Link className='link' to='/workhistory'>Work History</Link>
                         <Link className='link' to='/education'>Education</Link>
+                        <button className='log' onClick={() => logout()}>logout</button>
                     </nav>
-                    <div className='auth-button'>
-                        <button onClick={() => logout()}>logout</button>
-                    </div>
+                    {/* <div className='auth-button-container'>
+                        <button className='log' onClick={() => logout()}>logout</button>
+                    </div> */}
                 </>
             )}
       </div>
