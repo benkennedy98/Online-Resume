@@ -1,3 +1,4 @@
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
 import { NavBar } from './NavBar';
@@ -15,9 +16,11 @@ const App = () => {
   }
 
   return (
+
     <div className="App">
       <header className="App-header">
         <NavBar />
+
       </header>
 
               <Routes>
@@ -26,6 +29,7 @@ const App = () => {
               <Route path='/workhistory' element={<WorkHistory />} />
               <Route path='/education' element={<Education />} />
             </Routes>
+
 
     </div>
   );
