@@ -2,17 +2,18 @@
     display: flex;
     min-height: 100px;
     align-items: center;
+    justify-content: space-evenly;
+
     .links-container {
         width: 100%;
         text-align: center;
         display: flex;
         justify-content: space-evenly;
         .link {
-            font-family: 'Memory', 'Times New Roman';
+            font-family: 'Preview', 'Times New Roman';
             font-size: 28px;
             text-decoration: unset;
             color: var(--blue);
-            line-height: 40px;
         }
         .link:last-child {
             margin-right: 0px;
