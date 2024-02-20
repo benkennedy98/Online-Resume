@@ -8,7 +8,7 @@ import { Education } from '../pages/Education';
 import './App.css';
 
 const App = () => {
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { isAuthenticated, isLoading } = useAuth0();
 
   if (isLoading) {
     return <div>Loading ...</div>;
@@ -19,16 +19,19 @@ const App = () => {
       <header className="App-header">
         <NavBar />
       </header>
-      { isAuthenticated && (
+
               <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/aboutme' element={<AboutMe />} />
               <Route path='/workhistory' element={<WorkHistory />} />
               <Route path='/education' element={<Education />} />
             </Routes>
-      )}
+
     </div>
   );
 }
 
 export default App;
+
+
+// isLoggedIn ? <Main/> : <Navigate to='/login'/>

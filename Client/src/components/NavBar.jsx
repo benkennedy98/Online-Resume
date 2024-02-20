@@ -20,9 +20,6 @@ export const NavBar = () => {
                         <Link className='link' to='/education'>Education</Link>
                         <button className='log' onClick={() => logout()}>logout</button>
                     </nav>
-                    {/* <div className='auth-button-container'>
-                        <button className='log' onClick={() => logout()}>logout</button>
-                    </div> */}
                 </>
             )}
       </div>
