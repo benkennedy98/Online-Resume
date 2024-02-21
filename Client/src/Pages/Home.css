@@ -1,0 +1,14 @@
+.icon-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--light-green);
+    padding: 10px;
+    .icon {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+.body-container {
+    padding: 20px 100px;
+}
