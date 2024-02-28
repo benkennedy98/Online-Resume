@@ -4,7 +4,7 @@ import cors from 'cors';
 import jwks from 'jwks-rsa';
 import bodyParser from 'body-parser'
 import axios from "axios";
-import routes from './routes'
+import routes from './routes/crmRoutes'
 
 const app = express();
 const PORT = 3001;
@@ -13,9 +13,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-app.get('/', (req, res) => res.send('App is working'))
+routes(app)
 
-app.use('/api', router)
+app.get('/', (req, res) => res.send('App is working'))
 
 // app.get('/aboutMe', (req, res) => {
 
