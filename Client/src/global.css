@@ -49,6 +49,17 @@ body {
             font-size: 24px;
             line-height: 30px;
         }
+        .text-input {
+            font-size: 24px;
+            line-height: 30px;
+            border-radius: 4px;
+            font-family: 'Preview', 'Times New Roman';
+            background-color: var(--white);
+            border: none;
+        }
+        .text-input:focus-visible {
+            outline: none;
+        }
     }
 }
 

@@ -28,6 +28,9 @@ export const NavBar = () => {
             <Link className="link" to="/education">
               Education
             </Link>
+            <Link className="link" to="/temperature">
+              Temperature
+            </Link>
             <button className="log" onClick={() => logout()}>
               logout
             </button>
