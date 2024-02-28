@@ -13,7 +13,7 @@ export const Temperature = () => {
         event.preventDefault();
         const currentValue = zipcodeInputRef.current?.value || '';
         const isValidZip = /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(currentValue);
-        isValidZip && getTemp(currentValue);
+        isValidZip ? (getTemp(currentValue), setError(false)) : setError(true);
     };
 
     console.log('rerender');
@@ -24,9 +24,14 @@ export const Temperature = () => {
                 <div className="title">Temperature</div>
             </div>
             <div className="body-container temp-body-container">
-                <div className="body temp-body">Check the temperature in your area!</div>
+                {error ? (
+                    <div className="body temp-body">Please enter a valid zipcode</div>
+                ) : (
+                    <div className="body temp-body">Check the temperature in your area!</div>
+                )}
                 <input
                     className="text-input"
+                    id={error ? 'error' : ''}
                     type="text"
                     placeholder="Enter your zipcode!"
                     ref={zipcodeInputRef}
