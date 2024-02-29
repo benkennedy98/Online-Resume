@@ -1,8 +1,7 @@
-import { getLocationTemp } from "../controllers/meteoMaticsController"
+import { getLocationTemp } from '../controllers/meteoMaticsController';
 
 const routes = (app) => {
-    app.route('/getLocationTemp')
-    .get(getLocationTemp)
+    app.route('/getLocationTemp').get(getLocationTemp);
 
     // .post((req, res) => {
     //     res.send('POST request sucessful!')
@@ -16,7 +15,7 @@ const routes = (app) => {
     // .post((req, res) => {
     //     res.send('POST request sucessful!')
     // })
-    
+
     // app.route('/contact/:contactId')
     // .put((req, res) => {
     //     res.send('PUT request sucessful!')
@@ -25,6 +24,6 @@ const routes = (app) => {
     // .delete((req, res) => {
     //     res.send('DELETE request sucessful!')
     // })
-}
+};
 
 export default routes;
