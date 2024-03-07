@@ -16,8 +16,6 @@ export const Temperature = () => {
         isValidZip ? (getTemp(currentValue), setError(false)) : setError(true);
     };
 
-    console.log('rerender');
-
     return (
         <div className="page-container">
             <div className="title-container">
